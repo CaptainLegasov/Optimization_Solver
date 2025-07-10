@@ -69,4 +69,18 @@ solution = solver.solve(method="interior_point", verbose=True)
   -  numpy
 
   -  scipy
+---
 
+## Future Enhancements
+
+  -  Automatic NDCQ/MFCQ constraint qualification checks
+
+  -  Dual variable interpretation & shadow pricing
+
+  - Visualization of feasible regions and KKT paths
+
+  -  GUI or web-based frontend for educational demos
+
+---
+## Author
+Sumit - This project is develoved as a part of summer activities after 2nd year of undergraduation.
