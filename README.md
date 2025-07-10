@@ -23,7 +23,7 @@ This project implements a flexible, symbolic-to-numeric optimization solver for 
 |-------------|-------------|
 | `core.py`   | Defines the `ConvexProblem` class, symbolic expressions, KKT logic |
 | `solver.py` | Implements `KKTSolver` with multiple methods (`root`, `active_set`, `interior_point`) |
-| `example.py` or notebook | Demonstrates usage on example convex problems |
+| `example.ipynb` | Demonstrates usage on example convex problems |
 
 ---
 
