@@ -1,23 +1,23 @@
-# 🧠 General-Purpose Constrained Optimization Solver using KKT Conditions
+# General-Purpose Constrained Optimization Solver using KKT Conditions
 
 This project implements a flexible, symbolic-to-numeric optimization solver for constrained convex problems. It supports solving using Karush-Kuhn-Tucker (KKT) conditions with multiple backends: root solving, active-set, and interior-point (barrier) methods.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Symbolic formulation of objective and constraints using **SymPy**
-- ⚙️ Modular architecture: define problems in `core.py`, solve via `solver.py`
-- 🔁 Supports:
+- Symbolic formulation of objective and constraints using **SymPy**
+- Modular architecture: define problems in `core.py`, solve via `solver.py`
+- Supports:
   - Root-based KKT solving
   - Active set method for inequality constraints
   - Interior-point method with automatic **Phase I** feasibility recovery
-- 🔧 Automatic Lagrangian construction and KKT condition generation
-- 🧪 Logs and prints solver status, feasibility, convergence, and variable values
+- Automatic Lagrangian construction and KKT condition generation
+- Logs and prints solver status, feasibility, convergence, and variable values
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 | File        | Description |
 |-------------|-------------|
@@ -27,7 +27,7 @@ This project implements a flexible, symbolic-to-numeric optimization solver for 
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 You define an optimization problem symbolically:
 
@@ -51,11 +51,11 @@ solution = solver.solve(method="interior_point", verbose=True)
 ```
 ---
 
-## ✨ Available Solver Methods
+## Available Solver Methods
 
 
-Method |	Description
----------------------
-`root`	 |  Solves full KKT system using scipy.optimize.root
-`active_set` |	Iteratively adds/removes constraints based on multipliers
-`interior_point` |	Barrier method for inequality constraints with feasibility recovery
+| Method          |	Description |
+|-----------------|-------------|
+|`root`	          | Solves full KKT system using scipy.optimize.root |
+|`active_set`     |	Iteratively adds/removes constraints based on multipliers |
+|`interior_point` |	Barrier method for inequality constraints with feasibility recovery |
