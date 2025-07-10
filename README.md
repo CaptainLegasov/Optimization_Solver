@@ -48,3 +48,10 @@ from solver import KKTSolver
 solver = KKTSolver(problem)
 
 solution = solver.solve(method="interior_point", verbose=True)
+```
+
+##✨ Available Solver Methods
+Method	Description
+root	Solves full KKT system using scipy.optimize.root
+active_set	Iteratively adds/removes constraints based on multipliers
+interior_point	Barrier method for inequality constraints with feasibility recovery
