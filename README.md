@@ -83,6 +83,6 @@ solution = solver.solve(method="interior_point", verbose=True)
 
 ---
 ## Author
-Sumit - This project is develoved as a part of summer activities after 2nd year of undergraduation.
+Sumit - This project is developed as a part of summer activities after 2nd year of undergraduation.
 
 Feel free to reach out for collaborations or questions!
